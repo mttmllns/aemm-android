@@ -42,8 +42,8 @@ android {
 		applicationId "com.adobe.dps.viewer"
 		minSdkVersion 19
 		targetSdkVersion 23
-		versionName "1.2.3"
-		versionCode 30
+		versionName "0.1.0"
+		versionCode 1
 		resValue "bool", "isDevPreview", "true"
 
 		proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
