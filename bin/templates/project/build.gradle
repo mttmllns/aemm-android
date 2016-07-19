@@ -31,6 +31,17 @@ repositories {
 
 apply plugin: 'com.android.application'
 
+apply from: 'dependencies.gradle'
+
+dependencies {
+	compile (name:'aemm-lib-release', ext:'aar')
+
+	compile fileTree(dir: 'libs', include: ['*.jar'], excludes:['adobeMobileLibrary-*.jar'])
+
+	// SUB-PROJECT DEPENDENCIES START
+	// SUB-PROJECT DEPENDENCIES END
+}
+
 // PLUGIN GRADLE EXTENSIONS START
 // PLUGIN GRADLE EXTENSIONS END
 
@@ -75,15 +86,4 @@ android {
 			minifyEnabled true
 		}
 	}
-}
-
-apply from: 'dependencies.gradle'
-
-dependencies {
-	compile (name:'aemm-lib-release', ext:'aar')
-
-	compile fileTree(dir: 'libs', include: ['*.jar'], excludes:['adobeMobileLibrary-*.jar'])
-
-	// SUB-PROJECT DEPENDENCIES START
-	// SUB-PROJECT DEPENDENCIES END
 }
