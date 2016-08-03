@@ -2,9 +2,10 @@
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:aemm="http://ns.adobe.com/aemm"
+    xmlns:tools="http://schemas.android.com/tools"
     package="__PACKAGE__">
 
-    <application android:name="com.adobe.dps.viewer.MainApplication">
+    <application android:name="com.adobe.dps.viewer.MultiDexMainApplication" tools:replace="android:name">
         <activity android:name="com.adobe.dps.viewer.collectionview.CollectionActivity">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />

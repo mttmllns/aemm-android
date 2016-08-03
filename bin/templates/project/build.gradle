@@ -35,6 +35,7 @@ apply from: 'dependencies.gradle'
 
 dependencies {
 	compile (name:'aemm-lib-release', ext:'aar')
+	compile 'com.android.support:multidex:1.0.1'
 
 	compile fileTree(dir: 'libs', include: ['*.jar'], excludes:['adobeMobileLibrary-*.jar'])
 
@@ -58,6 +59,8 @@ android {
 		resValue "bool", "isDevPreview", "true"
 
 		proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+
+		multiDexEnabled true
 	}
 
 	sourceSets {
