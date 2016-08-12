@@ -18,7 +18,12 @@
 # under the License.
 #
 -->
-## Release Notes for Cordova (Android) ##
+## Release Notes for AEMM Android ##
+
+### 6.0.0 (Aug 11, 2016)
+#### Features
+* Support for AEM Mobile
+* Includes AEM Mobile .aar version 2016.10
 
 ### 5.1.1 (Feb 24, 2016)
 * updated `cordova-common` dependnecy to `1.1.0`
