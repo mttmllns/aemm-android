@@ -1,6 +1,6 @@
 {
     "name": "cordova-android",
-    "version": "6.0.2",
+    "version": "6.0.3",
     "description": "aemm-android release",
     "bin": {
         "create": "bin/create"
