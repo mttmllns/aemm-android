@@ -53,7 +53,12 @@ dependencies {
 
 	compile 'com.adobe.creativesdk.foundation:auth:0.9.978'
 
-	compile (name:'adobeMobileLibrary-4.8.3', ext:'jar') // https://github.com/Adobe-Marketing-Cloud/mobile-services
+	compile (name:'adobeMobileLibrary-4.13.0', ext:'jar') // https://github.com/Adobe-Marketing-Cloud/mobile-services
 
 	compile (name:'CordovaLib-release', ext:'aar')
+
+	// Uncomment these if testing for memory leaks
+//	debugCompile 'com.squareup.leakcanary:leakcanary-android:1.4-beta2'
+//	releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2'
+//	testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2'
 }
